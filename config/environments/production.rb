@@ -51,9 +51,9 @@ Iresume::Application.configure do
   conn = Mongo::Connection.from_uri(ENV['MONGOHQ_URL'])
   Mongomatic.db = conn.db(uri.path.gsub(/^\//, ''))
 
-  config.facebook_app_id = 'YOUR_APP_ID'
-  config.facebook_app_secret = 'YOUR_APP_SECRET'
-  config.facebook_redirect_uri = 'http://jqmfbror/auth/facebook/callback' 
+  config.facebook_app_id = '209176265830139'
+  config.facebook_app_secret = '0b623bd86ca9024b61b1d0696d05640b'
+  config.facebook_redirect_uri = 'http://namegame.heroku.com/auth/facebook/callback' 
   #Your redirect URI for dev environment.  /auth/facebook/callback should not be changed as it is used by omniauth.
   #This redirect domain must match the settings in your Facebook developer app.
 end
